@@ -1,0 +1,21 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.sombra{
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.tarefa {
+    display: inline-block;
+    width: 25%;
+    margin-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
