@@ -4,22 +4,21 @@ body {
     font-size: 20px;
     text-align: center;
 }
-.container {
+.my_container {
     display: inline-block;
     width: auto;
     margin-top: 2%;
     padding: 1%;
     background-color: #f2f2f2;
-    border: 1px solid #dddddd;
+    border: 1px solid #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 footer {
-    position: fixed;
-    left: 0%;
+    position: absolute;
     bottom: 0%;
     width: 100%;
-
+    padding: 20px;
 }
 #delete{
     margin-top: 5px !important;
