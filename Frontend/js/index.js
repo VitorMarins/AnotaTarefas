@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const atualizarTarefas = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/tarefa');
+            const response = await fetch('https://anotatarefas.onrender.com/api/tarefa');
             const tarefas = await response.json();
             listaTarefa.innerHTML = '';
             tarefas.forEach(addTarefaDOM);
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         li.querySelector('.btn-deletar').onclick = async () => {
             if (confirm("Deseja realmente excluir esta tarefa?")) {
-                await fetch(`http://localhost:3000/api/tarefa/${tarefa._id}`, { method: 'DELETE' });
+                await fetch(`https://anotatarefas.onrender.com/api/tarefa/${tarefa._id}`, { method: 'DELETE' });
                 if (editandoId === tarefa._id) {
                     cancelarEdicao();
                 }
@@ -68,13 +68,13 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         try {
             if (editandoId) {
-                await fetch(`http://localhost:3000/api/tarefa/${editandoId}`, {
+                await fetch(`https://anotatarefas.onrender.com/api/tarefa/${editandoId}`, {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(dadosTarefa)
                 });
             } else {
-                await fetch('http://localhost:3000/api/tarefa', {
+                await fetch('https://anotatarefas.onrender.com/api/tarefa', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(dadosTarefa)
