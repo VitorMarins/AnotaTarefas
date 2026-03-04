@@ -1,5 +1,5 @@
 const express = require("express");
-const mongoose = require('mongoose');
+const morgan = require('morgan');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const tarefaRoute = require('./routes/tarefa.routes');
@@ -13,7 +13,10 @@ const corsOptions = {
     origin: 'https://anotatarefas.netlify.app',
     optionsSuccessStatus: 200
 };
+
 app.use(cors(corsOptions));
+
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
 
 app.use(express.json());
 
