@@ -1,4 +1,4 @@
-const Tarefa = require('../models/Tarefa');
+const Tarefa = require('../models/tarefa.models');
 
 const createTarefa = async (req, res) => {
     try {
