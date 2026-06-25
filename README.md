@@ -6,7 +6,7 @@ Uma aplicação moderna e eficiente para gerenciamento de tarefas, estruturada c
 
 ## 📸 Preview da Aplicação
 
-![Screenshot do AnotaTarefas](Image.png)
+![Screenshot do AnotaTarefas](preview.png)
 
 ---
 
