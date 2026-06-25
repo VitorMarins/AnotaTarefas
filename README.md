@@ -17,7 +17,7 @@ O projeto adota uma arquitetura organizada para facilitar a manutenção e escal
 - **`Frontend/`**: Interface do usuário (HTML, CSS, JS) e configurações de PWA (Manifest e Service Workers).
 - **`Backend/`**: Camada de servidor responsável pela persistência de dados e regras de negócio.
 - **`.gitignore`**: Configuração de arquivos ignorados pelo controle de versão.
-- **`Image.png`**: Captura de tela ou diagrama da aplicação.
+- **`preview.png`**: Captura de tela ou diagrama da aplicação.
 
 ---
 
